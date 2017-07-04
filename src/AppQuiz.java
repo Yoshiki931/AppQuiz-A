@@ -11,13 +11,19 @@ public class AppQuiz {
   }
   public void init(){
     sc = new Scanner(System.in);
+    System.out.println("*** クイズゲーム ***");
+    System.out.println("今から出題される６問に対して、項番で回答してください。");
+    System.out.println("");
     total += question1();
     total += question2();
     total += question3();
     total += question4();
     total += question5();
     total += question6();
-    System.out.println("TotalScore : " + total);
+    System.out.print("TotalScore : " + total);
+    if( total == 600){
+      System.out.println("(満点です。おめでとう！)");
+    }
     sc.close();
   }
   public int question1(){
@@ -63,7 +69,7 @@ public class AppQuiz {
     int point = 0;
   	System.out.println("問題３");
   	System.out.println("今何問目？");
-  	System.out.print("1:4問目  2:3問目");
+  	System.out.println("1:4問目  2:3問目");
   	do{
   	  System.out.print("回答：");
   	  ans = sc.nextInt();
