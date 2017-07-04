@@ -16,6 +16,11 @@ public class AppQuiz {
     return point;
   }
   public int question3(){
+	System.out.println("第3問");
+	System.out.println("今何問目？");
+	System.out.println("1、4問目");
+	System.out.println("2、3問目");
+	System.out.printn("回答" + point = sc.nexInt());
     return point;
   }
   public int question4(){
