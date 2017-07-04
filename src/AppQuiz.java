@@ -10,6 +10,12 @@ public class AppQuiz {
 
   }
   public int question1(){
+	System.out.println("問題１");
+	System.out.println("パンはパンでも食べられないパンはなんでしょう？");
+	System.out.println("選択肢１：メロンパン");
+	System.out.println("選択肢２：フライパン");
+	point = sc.nextInt();
+	System.out.println();
     return point;
   }
   public int question2(){
